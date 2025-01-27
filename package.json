@@ -14,13 +14,16 @@
     "test:watch": "npm run test -- --watch"
   },
   "dependencies": {
-    "@specs-feup/lara": "^3.0.4"
+    "@specs-feup/lara": "^3.0.4",
+    "express": "^4.21.2",
+    "ws": "^8.18.0"
   },
   "devDependencies": {
     "@jest/globals": "^29.7.0",
     "@types/jest": "^29.5.12",
     "@typescript-eslint/eslint-plugin": "^7.16.0",
     "@typescript-eslint/parser": "^7.16.0",
+    "copyfiles": "^2.4.1",
     "cross-env": "^7.0.3",
     "eslint": "^8.57.0",
     "eslint-config-prettier": "^9.1.0",
