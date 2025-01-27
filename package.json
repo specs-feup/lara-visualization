@@ -5,7 +5,7 @@
   "description": "LARA package for visualization of the mapping between source code and AST",
   "type": "module",
   "scripts": {
-    "build": "tsc",
+    "build": "tsc && copyfiles -u 1 -e '**/*.ts' 'src/public/**/*' api/",
     "build:watch": "tsc --watch",
     "lint": "eslint .",
     "docs": "typedoc",

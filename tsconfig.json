@@ -1,8 +1,9 @@
 {
   "include": ["src/**/*.ts"],
   "exclude": ["node_modules", "**/*.spec.ts", "**/*.test.ts"],
+  "assets": ["src/public/css/*", "src/public/img/*", "src/public/favicon.ico", "src/public/index.html"],
   "compilerOptions": {
-    "outDir": "dist",
+    "outDir": "api",
     "target": "ES2022",
     "module": "NodeNext",
     "declaration": true,
