@@ -1,4 +1,4 @@
-import { LaraJoinPoint } from "../LaraJoinPoint.js";
+import { LaraJoinPoint } from "@specs-feup/lara/api/LaraJoinPoint.js";
 import ToolJoinPoint from "./public/js/ToolJoinPoint.js";
 
 /**

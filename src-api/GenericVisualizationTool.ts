@@ -5,8 +5,8 @@ import { fileURLToPath } from 'url';
 import WebSocket, { WebSocketServer } from 'ws';
 import { AddressInfo } from 'net';
 
-import { LaraJoinPoint } from '../LaraJoinPoint.js';
-import JoinPoints from '../weaver/JoinPoints.js';
+import { LaraJoinPoint } from '@specs-feup/lara/api/LaraJoinPoint.js';
+import JoinPoints from '@specs-feup/lara/api/weaver/JoinPoints.js';
 import GenericAstConverter, { FilesCode } from './GenericAstConverter.js';
 import ToolJoinPoint from './public/js/ToolJoinPoint.js';
 
