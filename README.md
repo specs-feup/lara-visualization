@@ -16,13 +16,21 @@ To integrate the tool in another compiler:
 
 ## Usage
 
+The tool is best suited to be extended as a new NPM package. For integration, create a new NPM project and include LARA Visualization Tool's package.
+
+```bash
+npm install @specs-feup/lara-visualization
+```
+
+From there, make all adjustments necessary to use the tool for your compiler in that package, and include it in the project where your LARA scripts are found.
+
 After integration, and being `VisualizationTool` the extended derived class of `GenericVisualizationTool`, to launch or update the visualization tool, execute the following statement:
 
 ```js
 await VisualizationTool.visualize();
 ```
 
-Once ready, Clava will provide the URL that should be opened in the browser to access the web interface. The function can also change the AST root and URL domain and port.
+Once ready, the tool will provide the URL that should be opened in the browser to access the web interface. The function can also change the AST root and URL domain and port.
 
 Other properties will allow the user to know other important information from the server:
 
