@@ -1,6 +1,6 @@
 {
   "name": "@specs-feup/lara-visualization",
-  "version": "1.0.4",
+  "version": "1.0.6",
   "author": "Bruno Oliveira",
   "description": "LARA package for visualization of the mapping between source code and AST",
   "type": "module",
