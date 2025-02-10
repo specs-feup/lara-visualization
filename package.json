@@ -1,9 +1,22 @@
 {
   "name": "@specs-feup/lara-visualization",
-  "version": "1.0.0",
+  "version": "1.0.3",
   "author": "Bruno Oliveira",
   "description": "LARA package for visualization of the mapping between source code and AST",
   "type": "module",
+  "files": [
+    "api",
+    "src",
+    ".gitignore",
+    "jest.config.js",
+    "LICENSE",
+    "package-lock.json",
+    "package.json",
+    "README.md",
+    "tsconfig.jest.json",
+    "tsconfig.json",
+    "typedoc.config.js"
+  ],
   "scripts": {
     "build": "tsc && copyfiles -u 1 -e '**/*.ts' 'src/public/**/*' api/",
     "build:watch": "tsc --watch",
