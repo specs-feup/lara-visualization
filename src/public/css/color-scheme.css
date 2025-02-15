@@ -37,6 +37,8 @@
   --button-hover-bg-color: var(--lighter-gray);
   --button-disabled-bg-color: var(--lighter-gray);
 
+  --header-button-bg-color: var(--light-gray);
+
   --tab-bg-color: var(--white);
   --tab-hover-bg-color: var(--lighter-gray);
   --tab-active-bg-color: var(--light-gray);
@@ -63,6 +65,8 @@
   --button-bg-color: var(--black);
   --button-hover-bg-color: var(--darker-gray);
   --button-disabled-bg-color: var(--dark-gray);
+
+  --header-button-bg-color: var(--dark-gray);
 
   --tab-bg-color: var(--black);
   --tab-hover-bg-color: var(--darker-gray);
