@@ -8,14 +8,12 @@
   --literal: var(--cornflower-blue);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --comment: var(--gray);
-    --keyword: var(--violet);
-    --type: var(--violet);
-    --string: var(--tangerine);
-    --literal: var(--tangerine);
-  }
+:root.dark {
+  --comment: var(--gray);
+  --keyword: var(--violet);
+  --type: var(--violet);
+  --string: var(--tangerine);
+  --literal: var(--tangerine);
 }
 
 /* Syntax highlighting classes */

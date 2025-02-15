@@ -51,29 +51,27 @@
 
 /* Dark color scheme */
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --bg-color: var(--black);
-    --translucid-bg-color: var(--translucid-black);
-    --text-color: var(--white);
-    --header-color: var(--darker-gray);
-    --border-color: var(--lighter-gray);
-    --icon-color: var(--white);
-    --disabled-icon-color: var(--gray);
+:root.dark {
+  --bg-color: var(--black);
+  --translucid-bg-color: var(--translucid-black);
+  --text-color: var(--white);
+  --header-color: var(--darker-gray);
+  --border-color: var(--lighter-gray);
+  --icon-color: var(--white);
+  --disabled-icon-color: var(--gray);
 
-    --button-bg-color: var(--black);
-    --button-hover-bg-color: var(--darker-gray);
-    --button-disabled-bg-color: var(--dark-gray);
+  --button-bg-color: var(--black);
+  --button-hover-bg-color: var(--darker-gray);
+  --button-disabled-bg-color: var(--dark-gray);
 
-    --tab-bg-color: var(--black);
-    --tab-hover-bg-color: var(--darker-gray);
-    --tab-active-bg-color: var(--dark-gray);
+  --tab-bg-color: var(--black);
+  --tab-hover-bg-color: var(--darker-gray);
+  --tab-active-bg-color: var(--dark-gray);
 
-    --highlight-color: var(--russet);
-    --secondary-highlight-color: var(--dark-russet);
-    --tertiary-highlight-color: var(--darker-russet);
+  --highlight-color: var(--russet);
+  --secondary-highlight-color: var(--dark-russet);
+  --tertiary-highlight-color: var(--darker-russet);
 
-    --line-num-color: var(--gray);
-    --secondary-code-bg-color: var(--darker-gray);
-  }
+  --line-num-color: var(--gray);
+  --secondary-code-bg-color: var(--darker-gray);
 }
