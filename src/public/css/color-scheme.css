@@ -12,11 +12,11 @@
   --translucid-black: #16161666;
   --tangerine: #ff9e64;
   --russet: #794120;
-  --dark-russet: #512b15;
-  --darker-russet: #311a0d;
+  --translucid-russet: #794120aa;
+  --more-translucid-russet: #79412055;
   --sky-blue: #7dcfff;
-  --light-sky-blue: #b2e3ff;
-  --lighter-sky-blue: #dbf2ff;
+  --translucid-sky-blue: #b2e3ffaa;
+  --more-translucid-sky-blue: #dbf2ff55;
   --cornflower-blue: #234b90;
   --violet: #b69af7;
   --purple: #5a3e8e;
@@ -44,8 +44,8 @@
   --tab-active-bg-color: var(--light-gray);
 
   --highlight-color: var(--sky-blue);
-  --secondary-highlight-color: var(--light-sky-blue);
-  --tertiary-highlight-color: var(--lighter-sky-blue);
+  --secondary-highlight-color: var(--translucid-sky-blue);
+  --tertiary-highlight-color: var(--more-translucid-sky-blue);
 
   --line-num-color: var(--dark-gray);
   --secondary-code-bg-color: var(--lighter-gray);
@@ -73,8 +73,8 @@
   --tab-active-bg-color: var(--dark-gray);
 
   --highlight-color: var(--russet);
-  --secondary-highlight-color: var(--dark-russet);
-  --tertiary-highlight-color: var(--darker-russet);
+  --secondary-highlight-color: var(--translucid-russet);
+  --tertiary-highlight-color: var(--more-translucid-russet);
 
   --line-num-color: var(--gray);
   --secondary-code-bg-color: var(--darker-gray);
