@@ -89,18 +89,21 @@ header button:hover {
   grid-column-start: 4;
 }
 
-#theme-switch > :last-child {
+#theme-switch > * {
   display: none;
 }
 
-:root.dark #theme-switch > :first-child {
-  display: none;
-}
-
-:root.dark #theme-switch > :last-child {
+#theme-switch.light > .light-icon {
   display: block;
 }
 
+#theme-switch.dark > .dark-icon {
+  display: block;
+}
+
+#theme-switch.auto > .auto-icon {
+  display: block;
+}
 
 main {
   --code-container-width: calc(100% - var(--ast-container-width) - 1em);

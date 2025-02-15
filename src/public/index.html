@@ -3,6 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="module">
+        import { syncTheme } from '/js/theme.js';
+        syncTheme();
+    </script>  <!-- Added inline in head to prevent FOUC -->
     <link rel="stylesheet" href="/css/imports.css">
     <link rel="stylesheet" href="/css/color-scheme.css">
     <link rel="stylesheet" href="/css/styles.css">
@@ -11,13 +15,14 @@
     <title>LARA Visualization Tool</title>
 </head>
 <body>
-    <script>0</script>  <!-- To prevent FOUC (Flash Of Unstyled Content) -->
+    <script>0</script>  <!-- To prevent Firefox FOUC-->
     <header>
         <img class="specs-logo" src="/img/specs-logo.png" alt="SPeCS Logo">
         <h1>LARA Visualization Tool</h1>
         <button id="theme-switch" title="Light/Dark Theme">
-            <span class="icon material-symbols-outlined">light_mode</span>
-            <span class="icon material-symbols-outlined">dark_mode</span>
+            <span class="icon material-symbols-outlined light-icon">light_mode</span>
+            <span class="icon material-symbols-outlined dark-icon">dark_mode</span>
+            <span class="icon material-symbols-outlined auto-icon">brightness_6</span>
         </button>
     </header>
     <main>
