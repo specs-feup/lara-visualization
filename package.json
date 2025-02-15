@@ -18,8 +18,10 @@
     "typedoc.config.js"
   ],
   "scripts": {
-    "build": "tsc && copyfiles -u 1 -e \"**/*.ts\" \"src/public/**/*\" api/",
-    "build:watch": "tsc --watch",
+    "build": "tsc && copyfiles -u 1 -e '**/*.ts' 'src/public/**/*' api/",
+    "build:ts": "tsc",
+    "build:public": "copyfiles -u 1 -e '**/*.ts' 'src/public/**/*' api/",
+    "build:watch": "tsc --watch & npx nodemon -w 'src/public/**/*' -e 'html,css,png,ico' -x 'npm run build:public'",
     "lint": "eslint .",
     "docs": "typedoc",
     "test": "cross-env NODE_OPTIONS=\"$NODE_OPTIONS --experimental-vm-modules\" jest --detectOpenHandles --forceExit src",
