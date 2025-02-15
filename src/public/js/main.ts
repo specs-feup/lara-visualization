@@ -1,4 +1,4 @@
-import { addThemeSwitchListener } from "./theme.js";
+import { addThemeSwitchListener, syncThemeSwitch } from "./theme.js";
 import { addContinueButtonEventListeners, getWebSocket } from "./communication.js";
 import { addResizerEventListeners } from "./visualization.js";
 
@@ -16,5 +16,6 @@ const setupEventListeners = (ws: WebSocket): void => {
   };
   setupWebSocket();
 
+  syncThemeSwitch();  // Code in header does not sync theme switch
   setupEventListeners(ws!);
 })();

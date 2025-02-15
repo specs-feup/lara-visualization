@@ -1,12 +1,16 @@
 import { getThemeSwitch } from "./components.js";
 
-const syncTheme = () => {
+const syncDocumentWithTheme = () => {
     let theme = localStorage.getItem('theme');
     let setDark = theme === 'dark' || (!theme && window.matchMedia('(prefers-color-scheme: dark)').matches);
 
     document.documentElement.classList.toggle('dark', setDark);
+}
 
+const syncThemeSwitch = () => {
+    const theme = localStorage.getItem('theme');
     const themeSwitch = getThemeSwitch();
+
     themeSwitch.classList.toggle('light', theme === 'light');
     themeSwitch.classList.toggle('dark', theme === 'dark');
     themeSwitch.classList.toggle('auto', !theme);
@@ -27,7 +31,8 @@ const toggleTheme = () => {
             break;
     }
 
-    syncTheme();
+    syncDocumentWithTheme();
+    syncThemeSwitch();
 }
 
 const addThemeSwitchListener = () => {
@@ -38,4 +43,4 @@ const addThemeSwitchListener = () => {
     themeSwitch.addEventListener('click', toggleTheme);
 }
 
-export { syncTheme, addThemeSwitchListener };
+export { syncDocumentWithTheme, syncThemeSwitch, addThemeSwitchListener };

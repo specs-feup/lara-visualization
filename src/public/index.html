@@ -4,8 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script type="module">
-        import { syncTheme } from '/js/theme.js';
-        syncTheme();
+        const storageTheme = localStorage.getItem('theme');
+        const setDark = storageTheme === 'dark' || (!storageTheme && window.matchMedia('(prefers-color-scheme: dark)').matches);
+
+        document.documentElement.classList.toggle('dark', setDark);
     </script>  <!-- Added inline in head to prevent FOUC -->
     <link rel="stylesheet" href="/css/imports.css">
     <link rel="stylesheet" href="/css/color-scheme.css">
