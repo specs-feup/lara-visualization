@@ -202,6 +202,7 @@ const addResizerEventListeners = (): void => {
 
   let drag = false;
   let width = astContainer.offsetWidth;
+  const resizerWidth = resizer.offsetWidth;
 
   const rootStyle = document.documentElement.style;
 
@@ -219,7 +220,7 @@ const addResizerEventListeners = (): void => {
       const minWidth = continueButton.offsetWidth;
       const maxWidth = codeContainer.getBoundingClientRect().right - astLeft - 160;
 
-      width = event.x - astLeft;
+      width = event.x - astLeft - resizerWidth / 2;
       if (width < minWidth)
         width = minWidth;
       else if (width > maxWidth)

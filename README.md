@@ -2,9 +2,11 @@
 
 Web tool for visualization and analysis of the AST and its source code.
 
+For more details, see the [LARA Framework repository](https://github.com/specs-feup/lara-framework).
+
 ## Integration
 
-Internally, the tool follows a system for interaction with the compiler, to be able to apply code linkage and correction, among others, while still being independent of the specific compiler. This system is an implementation of the Factory Method pattern, and the integration with Clava is illustrated in the following diagram:
+Internally, the tool follows a system for interaction with the compiler, to be able to apply code linkage and correction, among others, while still being independent of the specific compiler. This system is an implementation of the Factory Method pattern, and the [integration with Clava](https://github.com/specs-feup/clava-visualization) is illustrated in the following diagram:
 
 ![Compiler Abstracted System](./compiler-abstracted-system.svg)
 
@@ -41,4 +43,6 @@ VisualizationTool.port;        // port to which the server is listening
 VisualizationTool.hostname;    // hostname to which the server is listening
 ```
 
-For more details, refer to the `GenericVisualizationTool` documentation.
+For more details, refer to the `GenericVisualizationTool` documentation. 
+
+For a more detailed example on the usage of this project, check the [Clava visualization tool repository](https://github.com/specs-feup/clava-visualization).

@@ -53,20 +53,57 @@ header {
   padding: 0.5em;
   background-color: var(--header-color);
   
-  display: flex;
+  display: grid;
+  grid-template-columns: auto auto 1fr auto;
+  align-content: center;
   align-items: center;
-  justify-content: left;
   gap: 0.5em;
 }
 
 header .specs-logo {
-  height: 100%;
+  height: 3em;
 }
 
 header h1 {
   font-size: 1.5em;
 }
 
+header button {
+  height: 3em;
+  width: 3em;
+  padding: 0;
+  border: none;
+  border-radius: 100%;
+  background-color: var(--header-color);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+header button:hover {
+  background-color: var(--header-button-bg-color);
+}
+
+#theme-switch {
+  grid-column-start: 4;
+}
+
+#theme-switch > * {
+  display: none;
+}
+
+#theme-switch.light > .light-icon {
+  display: block;
+}
+
+#theme-switch.dark > .dark-icon {
+  display: block;
+}
+
+#theme-switch.auto > .auto-icon {
+  display: block;
+}
 
 main {
   --code-container-width: calc(100% - var(--ast-container-width) - 1em);

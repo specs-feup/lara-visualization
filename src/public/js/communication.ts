@@ -73,10 +73,14 @@ const parseMessage = (message: MessageEvent): any => {
   return JSON.parse(message.data);
 };
 
-const continueButtonOnClick = (ws: WebSocket): void => {
-  const continueButton = getContinueButton();
+const continueButtonOnClick = (continueButton: HTMLButtonElement, ws: WebSocket): void => {
   continueButton.disabled = true;
   sendData(ws, { message: 'continue' });
+};
+
+const addContinueButtonEventListeners = (ws: WebSocket): void => {
+  const continueButton = getContinueButton();
+  continueButton.addEventListener('click', () => continueButtonOnClick(continueButton, ws));
 };
 
 export {
@@ -84,5 +88,5 @@ export {
   sendData,
   parseMessage,
   webSocketOnMessage,
-  continueButtonOnClick,
+  addContinueButtonEventListeners,
 };
