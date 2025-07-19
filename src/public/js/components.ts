@@ -1,3 +1,11 @@
+const getThemeSwitch = (() => {
+  const themeSwitch = document.querySelector<HTMLInputElement>('#theme-switch');
+  if (!themeSwitch) {
+    throw new Error('Could not find theme switch');
+  }
+  return (): HTMLInputElement => themeSwitch;
+})();
+
 const getAstContainer = (() => {
   const astContainer = document.querySelector<HTMLDivElement>('#ast-container');
   if (!astContainer) {
@@ -261,6 +269,7 @@ const updateFileTabsArrows = (): void => {
 }
 
 export {
+  getThemeSwitch,
   getAstContainer,
   getCodeContainer,
   getNodeInfoContainer,

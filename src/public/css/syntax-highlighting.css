@@ -4,18 +4,16 @@
   --comment: var(--dark-gray);
   --keyword: var(--purple);
   --type: var(--purple);
-  --string: var(--blue);
-  --literal: var(--blue);
+  --string: var(--cornflower-blue);
+  --literal: var(--cornflower-blue);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --comment: var(--gray);
-    --keyword: var(--violet);
-    --type: var(--violet);
-    --string: var(--light-blue);
-    --literal: var(--light-blue);
-  }
+:root.dark {
+  --comment: var(--gray);
+  --keyword: var(--violet);
+  --type: var(--violet);
+  --string: var(--tangerine);
+  --literal: var(--tangerine);
 }
 
 /* Syntax highlighting classes */
