@@ -29,7 +29,7 @@
     "test:watch": "npm run test -- --watch"
   },
   "dependencies": {
-    "@specs-feup/lara": "^3.0.4",
+    "@specs-feup/lara": "^3.5.2",
     "express": "^4.21.2",
     "ws": "^8.18.0"
   },
