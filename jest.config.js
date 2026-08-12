@@ -1,4 +1,4 @@
-import { weaverConfig } from "@specs-feup/clava/code/WeaverConfiguration.js";
+import { weaverConfig } from "@specs-feup/lara/code/WeaverConfiguration.js";
 
 const config = {
   preset: "ts-jest/presets/default-esm",
